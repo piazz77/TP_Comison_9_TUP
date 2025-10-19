@@ -40,7 +40,7 @@ const Certificados = () => {
             <h2>Certificados</h2>
             
             {certificados.map((cert) => (
-                // Cada certificado es un item animado
+                
                 <motion.div
                     key={cert.id}
                     className="certificado-item"

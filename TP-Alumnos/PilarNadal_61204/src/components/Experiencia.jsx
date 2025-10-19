@@ -1,4 +1,3 @@
-// src/components/Experiencia.jsx
 
 import React from 'react';
 import { motion } from 'framer-motion';

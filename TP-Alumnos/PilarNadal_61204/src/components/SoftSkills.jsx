@@ -1,28 +1,26 @@
-// src/components/SoftSkills.jsx
 
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// --- CONFIGURACIÓN DE ANIMACIÓN ---
+
 const containerVariants = {
-  // El contenedor es el mismo: oculta todo y luego dispara a los hijos
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1, // Retardo un poco más corto (0.1s)
+      staggerChildren: 0.1, 
     },
   },
 };
 
 const itemVariants = {
-  // CLAVE: Usa 'scale' para el efecto de crecimiento
-  hidden: { opacity: 0, scale: 0.5 }, // Empieza invisible y a la mitad del tamaño (50%)
+ 
+  hidden: { opacity: 0, scale: 0.5 }, 
   visible: { 
     opacity: 1, 
     scale: 1, 
     transition: { 
-        type: 'spring', // Tipo 'spring' para un efecto de "rebote" rápido
+        type: 'spring', 
         stiffness: 150 
     } 
   },
@@ -54,7 +52,7 @@ const SoftSkills =()=> {
                         className="skill-item"
                         variants={itemVariants}
                     >
-                        {s.nombre} {/* ✅ Asegúrate de usar s.nombre */}
+                        {s.nombre} 
                     </motion.div>
                 ))}
             </div>

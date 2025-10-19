@@ -2,16 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 
-const containerVariants = { /* ... */ }; 
+const containerVariants = {  }; 
 const itemVariants = {
-    hidden: { opacity: 0, scale: 0.8 }, // Más sutil, parece que la tarjeta "llega"
+    hidden: { opacity: 0, scale: 0.8 }, 
     visible: { opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 100 } },
 }; 
 
 const Proyectos = () => {
     const proyectos = [
-        { id: 1, titulo: 'E-Commerce con React', desc: 'Plataforma de compras con carrito y pasarela de pago simulada.', link: 'URL_GITHUB_PROYECTO_1' },
-        { id: 2, titulo: 'API de Gestión de Tareas', desc: 'Backend en Node.js para gestionar tareas y usuarios.', link: 'URL_GITHUB_PROYECTO_2' },
+        { id: 1, titulo: 'E-Commerce con Html, css y javascript vanilla', desc: 'Plataforma de compras con carrito y factura de compra simulada.', link: 'URL_GITHUB_PROYECTO_1' },
+        { id: 2, titulo: 'Plataforma de mensajeria con Node.js, Express, React Vite y MongoDB', desc: 'Mensajería en tiempo real.', link: 'URL_GITHUB_PROYECTO_2' },
         { id: 3, titulo: 'Portafolio Personal (Este)', desc: 'Construido con React y Framer Motion para demostrar habilidades de frontend.', link: 'URL_GITHUB_ESTE_PROYECTO' },
     ];
 
